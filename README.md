@@ -4,8 +4,8 @@ Welcome to my portfolio.This portfolio highlights selected academic and independ
 
 ⭐ About Me
 
-Hi! I'm [Joshua], a student at [PYP GUILD PROGRAM] focusing on:
-I am passionate about applying my knowledge to real-world challenges, collaborating in team environments, and developing efficient, user-centric solutions.
+Hi! I'm [Joshua], a student at [PYP GUILD PROGRAMME] focusing on:
+Real-world challenges, collaborating in team environments, and developing efficient, user-centric solutions.
 I'm especially interested in [Web development], and I enjoy solving problems through code, research, and creative design.
 
 
@@ -23,7 +23,7 @@ Tech stack: Python / JavaScript / etc.
 🛠 Skills
 Technical Skills
 
-Languages: Python,JavaScript,
+Languages: Python,JavaScript.
 
 
 Specializations Web Development,
