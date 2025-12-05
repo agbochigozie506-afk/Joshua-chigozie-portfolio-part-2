@@ -23,7 +23,7 @@ Tech stack: Python / JavaScript / etc.
 🛠 Skills
 Technical Skills
 
-Languages: Python, JavaScript, C++, Java, SQL, HTML/CSS
+Languages: Python,JavaScript,
 
 
 Specializations Web Development,
