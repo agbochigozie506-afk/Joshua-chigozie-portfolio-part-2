@@ -1,0 +1,120 @@
+﻿Joshua Agbo — Portfolio Specification
+
+Purpose
+- Provide a clear, professional specification for Joshua Agbo’s personal portfolio website. Use this document as the source of truth for content, design decisions, assets, and development tasks.
+
+Audience
+- Potential employers, collaborators, and clients who want to review Joshua’s skills, projects, resume, and contact details.
+
+Site structure & navigation (header appears on every page)
+- Home (index.html)
+- Projects (projects.html)
+- About / Resume (about.html)
+- Contact (contact.html)
+- Footer on every page: “© 2025 Joshua Portfolio. All Rights Reserved.”
+
+Design system (visual guidelines)
+- Primary color: #0288d1 (accent)
+- Background gradient for hero: top pale sky blue #E0F7FA → bottom #ffffff
+- Neutral text color: #222. Use a clean sans-serif system stack.
+- Spacing: 1rem base unit, containers max-width 1000px.
+- Typography: headings bold and clear; body text readable at 16px default.
+
+Responsiveness
+- Use Flexbox and CSS Grid. Breakpoints at 900px and 600px.
+- Desktop: Projects grid shows 3 columns; tablet 2 columns; mobile 1 column.
+
+Pages and content requirements
+
+1) Home — index.html
+- Page title: “Home | JOSHUA”
+- Hero (two-column): left column contains name and short introduction; right column shows a professional headshot.
+  - H1: Joshua Agbo
+  - H2: computer literacy
+  - Short bio (2–3 sentences): explain what you do and what visitors can expect. (CONTENT_NEEDED)
+  - Primary CTA button: “View My Projects” → projects.html
+- Below hero: short welcome / highlights section linking to Projects and About.
+- Use `assets/profile.jpg` for the headshot. Provide an accessible alt attribute (e.g., “Joshua Agbo — profile photo”).
+
+2) Projects — projects.html
+- Page title: “My Work | JOSHUA”
+- Layout: CSS Grid. Card component for each project.
+- Project card fields:
+  - Image (assets/...), alt text (e.g., “screenshot of [Project Name]”)
+  - Title (H3)
+  - Short description (1–2 sentences)
+  - Tech tags (span.tech-tag)
+  - Action: “View” button opens a modal with expanded details.
+- Modal behavior: overlay with larger screenshot, full description, role, tech used, links (live site and source repo). Keyboard accessible and closable with Escape and an obvious close button.
+- Optional: link to a standalone project detail page when more content is needed.
+
+3) About / Resume — about.html
+- Page title: “About | JOSHUA”
+- Two-column layout:
+  - Left: Education and achievements (school names, years, certificates). CONTENT_NEEDED for exact years and any additional institutions.
+  - Right: Skills grouped by category (Web Development: HTML, CSS, Wireframing; Programming: Python; Design: Canva). Add proficiency levels if desired.
+- Include a prominent link/button to download the PDF resume: assets/Joshua_Resume.pdf (open in new tab).
+
+4) Contact — contact.html
+- Page title: “Contact | JOSHUA”
+- Centered contact form (name, email, message). Form action: Formspree endpoint OR mailto fallback. Decide which one to use.
+- Visible contact information below the form:
+  - Email: agbojoshua506@gmail.com
+  - GitHub: github-Joshua (link to full GitHub URL) — CONTENT_NEEDED to provide full GitHub profile URL
+
+Accessibility
+- Provide meaningful alt attributes for all images.
+- Ensure focus outline is visible for keyboard users.
+- Use semantic HTML (nav, main, header, footer, section, article).
+- Ensure color contrast meets WCAG AA (modify colors if needed).
+
+Assets (place in /assets)
+- profile.jpg — professional headshot (recommended 800×800 px) — REQUIRED
+- python-image.jpg or python-placeholder.png — project screenshot
+- canva-image.jpg or canva-placeholder.png — project screenshot
+- framing-image.jpg or framing-placeholder.png — project screenshot
+- Joshua_Resume.pdf — resume PDF (required)
+
+Interactions & behavior
+- Navigation links use relative paths and show active state.
+- Projects: clicking a card opens the modal; modal should display data attributes from card for title, description, image, tech, and external links.
+- Contact form: on success, provide a friendly message or redirect to a thank-you page. If using Formspree, configure the form endpoint.
+
+Development notes
+- Keep JavaScript minimal and unobtrusive. Use a single js/main.js for small interactive features (modal, form success UI updates).
+- CSS: css/styles.css should contain variables for colors and use Grid/Flexbox for layout.
+- Images: compress images for the web and use appropriate file types (JPEG/WEBP for photos, PNG for graphics).
+
+Deployment
+- Recommended: push to a GitHub repository and deploy with GitHub Pages or Netlify. Include a README with build & deploy instructions.
+
+Project file structure (recommended)
+- index.html
+- projects.html
+- about.html
+- contact.html
+- css/styles.css
+- js/main.js
+- assets/
+  - profile.jpg
+  - python-placeholder.png
+  - canva-placeholder.png
+  - framing-placeholder.png
+  - Joshua_Resume.pdf
+
+Checklist — items to complete (mark when done)
+- [ ] Add real headshot to assets/profile.jpg
+- [ ] Update Home bio copy (replace CONTENT_NEEDED)
+- [ ] Provide exact education years and any additional schooling
+- [ ] Add project screenshots and final descriptions (for each project card)
+- [ ] Replace Formspree form action with your form ID (or switch to mailto)
+- [ ] Confirm GitHub URL
+- [ ] Test keyboard navigation and color contrast
+- [ ] Deploy to GitHub Pages or Netlify
+
+How I can help next
+- I can update your site now: add your uploaded photo to the homepage and update indexing files.
+- I can populate project cards with real content (text + images) if you upload assets and descriptions.
+- I can configure the contact form (Formspree or mailto) and implement a client-side success message.
+
+If you want me to proceed: upload your headshot (named profile.jpg) into the assets folder or tell me the filename already there, and I will update the homepage so the photo appears and is optimized for the layout.
